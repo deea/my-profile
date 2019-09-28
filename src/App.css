@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: #09d3ac;
+}
+
 .App-logo {
   height: 3vmin;
 }
@@ -51,8 +56,4 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 0px 10px;
-}
-
-.Skills-margin {
-  margin: 0px 100px;
 }
