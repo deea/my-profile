@@ -3,11 +3,12 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 3vmin;
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-image: url("https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,4 +20,39 @@
 
 .App-link {
   color: #09d3ac;
+  margin-top: 10px;
+}
+
+.Created-with-react {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.Created-with-react p {
+  font-size: 14px;
+}
+
+.Header-personal {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+
+.Header-text p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.Work-skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+.Skills-margin {
+  margin: 0px 100px;
 }
