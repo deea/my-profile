@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const DetailsMargin = styled.div`
     margin: 0px 100px;
@@ -13,12 +14,17 @@ const ProjectsCoding = styled.div`
 `;
 
 const Details = ({ header, children }) => (
-    <DetailsMargin>
-        <h2>{header}</h2>
-        <ProjectsCoding>
-            {children}
-        </ProjectsCoding>
-    </DetailsMargin>
-)
+  <DetailsMargin>
+    <h2>{header}</h2>
+    <ProjectsCoding>
+      {children}
+    </ProjectsCoding>
+  </DetailsMargin>
+);
 
-export default Details
+Details.propTypes = {
+  header: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+};
+
+export default Details;
