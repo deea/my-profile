@@ -2,8 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const DetailsMargin = styled.div`
+const DetailsStyle = styled.div`
     margin: 0px 100px;
+    font-size: 24px;
 `;
 
 const ProjectsCoding = styled.div`
@@ -11,15 +12,16 @@ const ProjectsCoding = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: 14px;
 `;
 
 const Details = ({ header, children }) => (
-  <DetailsMargin>
+  <DetailsStyle>
     <h2>{header}</h2>
     <ProjectsCoding>
       {children}
     </ProjectsCoding>
-  </DetailsMargin>
+  </DetailsStyle>
 );
 
 Details.propTypes = {
