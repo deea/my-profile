@@ -1,9 +1,14 @@
-import React from "react"
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const Button = ({ onClick }) => (
-    <button className="App-link" onClick={onClick}>
-        Contact me
-    </button>
-)
+  <button className="App-link" onClick={onClick} type="button">
+    Contact me
+  </button>
+);
 
-export default Button
+Button.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
+
+export default Button;
