@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-const ProjectDetails = ({ url, projectName, text }) => (
+const ProjectDetails = ({ url, name, text }) => (
   <p>
     <span>
       <a href={url} target="_blank" rel="noopener noreferrer">
-        {`${projectName}: `}
+        {`${name}: `}
       </a>
     </span>
     {text}
@@ -15,7 +15,7 @@ const ProjectDetails = ({ url, projectName, text }) => (
 
 ProjectDetails.propTypes = {
   url: PropTypes.string.isRequired,
-  projectName: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
 
