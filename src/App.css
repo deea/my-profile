@@ -2,14 +2,11 @@
   /* text-align: center; */
   background-image: url("https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   min-height: 100vh;
+  color: white;
 }
 
 h1 {
   margin-top: 20px;
-}
-
-p, h1 {
-  color: white;
 }
 
 h2 {

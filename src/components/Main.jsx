@@ -5,6 +5,18 @@ import {
 } from './index';
 
 const skills = ['Ruby', 'Rails', 'HTML5', 'CSS/SCSS', 'JavaScript ES6', 'PostgreSQL', 'Heroku', 'GitHub', 'git', 'DNS', 'Relationship Management', 'Project Management', 'Collaboration', 'Teamwork', ' Work Ethic', 'Positive Attitude'];
+const projects = [
+  {
+    url: 'http://www.plantis.co',
+    name: 'Plantis',
+    text: 'A web application created as a collaborative project and designed to help people easily look after their house plants by reminding them when each one requires watering. In addition, it comprises of a motivational reward system along with a social feature where you can see and follow other people and their plants.',
+  },
+  {
+    url: 'https://plantza-alan1010010.herokuapp.com',
+    name: 'Plantza',
+    text: 'In a team of four, within a week we launched an AirBnB like web app for renting/letting house plants.',
+  },
+];
 
 const AppMain = styled.div`
   display: flex;
@@ -38,16 +50,14 @@ const Main = () => (
         </p>
       </Details>
       <Details header="Projects">
-        <ProjectDetails
-          url="http://www.plantis.co"
-          projectName="Plantis"
-          text="A web application created as a collaborative project and designed to help people easily look after their house plants by reminding them when each one requires watering. In addition, it comprises of a motivational reward system along with a social feature where you can see and follow other people and their plants."
-        />
-        <ProjectDetails
-          url="http://www.plantis.co"
-          projectName="Plantza"
-          text="In a team of four, within a week we launched an AirBnB like web app for renting/letting house plants."
-        />
+        {projects.map((project) => (
+          <ProjectDetails
+            key={project.name}
+            url={project.url}
+            name={project.name}
+            text={project.text}
+          />
+        ))}
       </Details>
       <Details header="Skills">
         <p>{skills.map((skill, i) => `${skill} ${(i === skills.length - 1) ? '' : ' | '}`)}</p>
