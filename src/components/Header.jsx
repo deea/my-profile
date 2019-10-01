@@ -5,17 +5,18 @@ import Avatar from './Avatar';
 
 const AppHeader = styled.header`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin: 0px 10px 0px 0px;
 `;
 
 const HeaderPersonal = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0px;
+  margin-top: 40px;
   padding: 0px;
 `;
 

@@ -3,8 +3,11 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const DetailsStyle = styled.div`
-    margin: 0px 100px;
+    margin: 0px 30px;
     font-size: 24px;
+    flex-grow: 1;
+    flex-basis: 0;
+    /* border-right: 2px solid #09d3ac; */
 `;
 
 const ProjectsCoding = styled.div`
@@ -12,7 +15,8 @@ const ProjectsCoding = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 16px;
+  margin: 14px 0px 0px 0px;
 `;
 
 const Details = ({ header, children }) => (

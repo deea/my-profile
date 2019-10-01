@@ -16,6 +16,7 @@ const SocialIcons = styled.div`
   color: white;
   font-size: 2em;
   border-top: 2px solid #09d3ac;
+  margin-top: 40px;
 `;
 
 const CreatedWithReact = styled.div`
@@ -53,7 +54,6 @@ const Footer = () => (
         through learning with React
       </CreatedWithReactPTag>
     </CreatedWithReact>
-
   </div>
 );
 

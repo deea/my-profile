@@ -1,15 +1,47 @@
 import React from 'react';
 import styled from 'styled-components';
 import meSquare from '../meSquare.jpg';
+import Pdf from '../AndreeaCapalnasResume.pdf';
+
+const AvatarText = styled.div`
+  position: absolute;
+  top: 100px;
+  left: 25px;
+  color: white;
+  visibility: hidden;
+  font-size: 16px;
+`;
+
+const Wrapper = styled.div`
+  position: relative;
+
+  &:hover ${AvatarText} {
+    visibility: visible;
+  }
+`;
 
 const AvatarImg = styled.img`
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   border-radius: 30%;
+
+  :hover {
+    opacity: 0.3;
+  }
 `;
 
 const Avatar = () => (
-  <AvatarImg src={meSquare} alt="avatar" />
+  <a href={Pdf} target="_blank" rel="noopener noreferrer">
+    <Wrapper>
+      <AvatarImg
+        src={meSquare}
+        alt="avatar"
+      />
+      <AvatarText>
+        Click for CV.
+      </AvatarText>
+    </Wrapper>
+  </a>
 );
 
 export default Avatar;
