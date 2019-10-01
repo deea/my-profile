@@ -20,7 +20,7 @@ const Skill = styled.div`
 const Skills = () => (
   <SkillsSection>
     {skills.map((skill) => (
-      <Skill>
+      <Skill key={skill}>
         {skill}
       </Skill>
     ))}
