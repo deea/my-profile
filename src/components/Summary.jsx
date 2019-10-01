@@ -7,8 +7,9 @@ const ShortBio = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 1.5em;
+  font-size: 20px;
   color: white;
+  font-style: italic;
 `;
 
 const Summary = ({ text }) => (
