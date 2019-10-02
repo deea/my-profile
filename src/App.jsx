@@ -1,20 +1,22 @@
 import React from 'react';
-import { Header, Footer } from './components';
-import Main from './components/Main';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from './components/Home';
+import PlantisScreens from './components/PlantisScreens';
+import PlantzaScreens from './components/PlantzaScreens';
+import Error from './components/Error';
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <div className="Content">
-        <Header
-          name="Andreea Capalnas"
-          position="Junior Full-Stack Developer | London"
-        />
-        <Main />
-        <Footer />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" component={Home} exact />
+        <Route path="/plantis" component={PlantisScreens} />
+        <Route path="/plantza" component={PlantzaScreens} />
+        <Route component={Error} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 

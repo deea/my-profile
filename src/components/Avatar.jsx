@@ -6,7 +6,7 @@ import Pdf from '../AndreeaCapalnasResume.pdf';
 const AvatarText = styled.div`
   position: absolute;
   top: 100px;
-  left: 25px;
+  left: 35px;
   color: white;
   visibility: hidden;
   font-size: 16px;
@@ -38,7 +38,7 @@ const Avatar = () => (
         alt="avatar"
       />
       <AvatarText>
-        Click for CV.
+        View CV
       </AvatarText>
     </Wrapper>
   </a>
