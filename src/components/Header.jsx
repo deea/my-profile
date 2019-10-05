@@ -6,7 +6,7 @@ import Avatar from './Avatar';
 const AppHeader = styled.header`
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: top;
   justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -16,7 +16,7 @@ const AppHeader = styled.header`
 const HeaderPersonal = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin: 10px 0px;
   padding: 0px;
 `;
 

@@ -7,6 +7,11 @@ const DetailsStyle = styled.div`
     font-size: 24px;
     flex-grow: 1;
     flex-basis: 0;
+    margin-top: 20px;
+
+    && h2 {
+      margin-bottom: 10px;
+    }
     /* border-right: 2px solid #09d3ac; */
 `;
 
@@ -16,7 +21,7 @@ const ProjectsCoding = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 16px;
-  margin: 14px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
 `;
 
 const Details = ({ header, children }) => (

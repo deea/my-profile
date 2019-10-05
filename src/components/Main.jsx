@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import {
   Summary, Details, ProjectDetails, Skills,
 } from './index';
@@ -8,7 +9,7 @@ const projects = [
   {
     url: 'http://www.plantis.co',
     name: 'Plantis',
-    text: 'A web application created as a collaborative project and designed to help people easily look after their house plants by reminding them when each one requires watering. In addition, it comprises of a motivational reward system along with a social feature where you can see and follow other people and their plants. Click here for screenshots.',
+    text: 'A web application created as a collaborative project and designed to help people easily look after their house plants by reminding them when each one requires watering. In addition, it comprises of a motivational reward system along with a social feature where you can see and follow other people and their plants.',
   },
   {
     url: 'https://plantza-alan1010010.herokuapp.com',
@@ -29,7 +30,6 @@ const WorkSkills = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0px 10px;
 `;
 
 const Main = () => (
@@ -42,10 +42,22 @@ const Main = () => (
     />
     <WorkSkills>
       <Details header="Relevant Experience">
-        <p>
-          <strong>Le Wagon Full-stack Ruby on Rails Bootcamp </strong>
-          - 9 week intensive coding bootcamp learning and coding with Ruby on Rails, HTML5, CSS/SCSS, Bootstrap, JavaScript ES6, jQuery, SQL, PostgreSQL, MVC, OOP, git, GitHub and Heroku. During the course I completed the several projects, listed in the Projects section.
-        </p>
+        <div>
+          <p>
+            <strong>Le Wagon Full-stack Ruby on Rails Bootcamp </strong>
+            - 9 week intensive coding bootcamp learning and coding with Ruby on Rails, HTML5, CSS/SCSS, Bootstrap, JavaScript ES6, jQuery, SQL, PostgreSQL, MVC, OOP, git, GitHub and Heroku. During the course I completed several projects, listed in the Projects section.
+          </p>
+          <Link to="/plantis" target="_blank">
+            <button type="button">
+              Plantis screenshots
+            </button>
+          </Link>
+          <Link to="/plantza" target="_blank">
+            <button type="button">
+              Plantza screenshots
+            </button>
+          </Link>
+        </div>
       </Details>
       <Details header="Projects">
         {projects.map((project) => (
@@ -58,7 +70,7 @@ const Main = () => (
         ))}
       </Details>
       <Details header="Skills">
-        <Skills />
+        <p><Skills /></p>
       </Details>
     </WorkSkills>
   </AppMain>
