@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const skills = ['Ruby', 'Heroku', 'Teamwork', 'Rails', 'PostgreSQL', 'Collaboration', 'JavaScript ES6', 'GitHub', 'Work Ethic', 'CSS/SCSS', 'git', 'Positive Attitude', 'HTML5', 'DNS', 'Project Management'];
+const skills = ['Ruby', 'Heroku', 'Teamwork', 'Rails', 'PostgreSQL', 'Collaboration', 'JavaScript ES6', 'GitHub', 'Work Ethic', 'CSS/SCSS', 'git', 'Enthusiasm', 'HTML5', 'DNS', 'Project Management'];
 
 const SkillsSection = styled.div`
   display: flex;
@@ -9,7 +9,6 @@ const SkillsSection = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: top;
-  margin: 14px 0px;
 `;
 
 const Skill = styled.div`

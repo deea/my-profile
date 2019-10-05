@@ -16,7 +16,7 @@ const SocialIcons = styled.div`
   color: white;
   font-size: 2em;
   border-top: 2px solid #09d3ac;
-  margin-top: 40px;
+  margin-top: 20px;
 `;
 
 const CreatedWithReact = styled.div`

@@ -5,7 +5,7 @@ const ProjectDetails = ({ url, name, text }) => (
   <p>
     <span>
       <a href={url} target="_blank" rel="noopener noreferrer">
-        {`${name}: `}
+        <strong>{`${name}: `}</strong>
       </a>
     </span>
     {text}
