@@ -1,8 +1,8 @@
 import React from 'react';
 // import plantisHomepage from '../plantisHomepage.png';
 
-const PlantzaScreens = () => (
+const PlantzaPage = () => (
   <p>Hello World</p>
 );
 
-export default PlantzaScreens;
+export default PlantzaPage;
