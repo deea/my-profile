@@ -22,8 +22,9 @@ const PageWrapper = styled.div`
 const PlantisPage = () => (
   <div style={{
     background: 'linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url("https://images.pexels.com/photos/1227648/pexels-photo-1227648.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")',
-    backgroundPosition: 'center',
     backgroundSize: 'cover',
+    backgroundPosition: 'top center',
+    backgroundAttachment: 'fixed',
     backgroundRepeat: 'no-repeat',
     color: 'white',
     paddingBottom: '50px',

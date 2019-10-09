@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import {
   Summary, Details, ProjectDetails, Skills,
 } from './index';
+import Button from './Buttons';
 
 const projects = [
   {
@@ -47,16 +47,9 @@ const Main = () => (
             <strong>Le Wagon Full-stack Ruby on Rails Bootcamp </strong>
             - 9 week intensive coding bootcamp learning and coding with Ruby on Rails, HTML5, CSS/SCSS, Bootstrap, JavaScript ES6, jQuery, SQL, PostgreSQL, MVC, OOP, git, GitHub and Heroku. During the course I completed several projects, listed in the Projects section.
           </p>
-          <Link to="/plantis" target="_blank">
-            <button type="button">
-              Plantis screenshots
-            </button>
-          </Link>
-          <Link to="/plantza" target="_blank">
-            <button type="button">
-              Plantza screenshots
-            </button>
-          </Link>
+          <div>
+            <Button />
+          </div>
         </div>
       </Details>
       <Details header="Projects">
