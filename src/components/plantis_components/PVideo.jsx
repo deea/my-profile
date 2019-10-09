@@ -33,8 +33,8 @@ const PVideo = () => (
       opts={opts}
     />
     <VideoText>
-      <h3>Watch the <strong>demo</strong> from presentation night.</h3>
-      <p>This was the final night of the bootcamp, where all 12 projects were presented.</p>
+      <h3>See the Plantis app in action by watching the <strong>demo</strong> video from the nerve-racking presentation night.</h3>
+      <p>This was our final night of the bootcamp, where 12 projects that had been preselected to be developed were being demoed. It wasn't an easy task to present in front of alomst 100 people, especially when you want to ensure that you render the potential of the app along wiht the hard work that has gone into it. But we did it and we couldn't be prouder!</p>
     </VideoText>
   </VideoWrapper>
 );

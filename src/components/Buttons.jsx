@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-const ButtonsWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+const ButtonWrapper = styled.div`
+  justify-content: center;
   margin-top: 15px;
 `;
 
@@ -18,21 +17,29 @@ const Buttons = styled.button`
   width: 200px;
   height: 35px;
   border-radius: 30px;
+  justify-content: center;
+  margin-top: 15px;
 `;
 
-const Button = () => (
-  <ButtonsWrapper>
-    <Link to="/plantis" target="_blank">
+const Button = ({ url, text, target }) => (
+  <ButtonWrapper>
+    <Link to={url} target={target}>
       <Buttons type="button">
-        Plantis screenshots
+        {text}
       </Buttons>
     </Link>
-    <Link to="/plantza" target="_blank">
-      <Buttons type="button">
-        Plantza screenshots
-      </Buttons>
-    </Link>
-  </ButtonsWrapper>
+  </ButtonWrapper>
 );
+
+Button.defaultProps = {
+  target: '',
+};
+
+Button.propTypes = {
+  url: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  target: PropTypes.string,
+};
+
 
 export default Button;
