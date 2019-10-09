@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import aPlantisHomepage from '../../plantis_images/aPlantisHomepage.png';
-import bPlantisHomepageHowItWorks from '../../plantis_images/bPlantisHomepageHowItWorks.png';
+import aPlantis from '../../plantis_images/aPlantis.png';
+import bPlantis from '../../plantis_images/bPlantis.png';
 
 const CarouselAndText = styled.div`
   display: flex;
@@ -29,7 +29,7 @@ const HomepageImg = styled.img`
 `;
 
 const CarouselWrapper = styled.div`
-  width: 1000px;
+  width: 700px;
   height: 450px;
   margin: 40px 0px;
   padding: 20px 0px;
@@ -52,8 +52,8 @@ const PCarousel = () => (
           slidesToShow={1}
           slidesToScroll={1}
         >
-          <HomepageImg src={aPlantisHomepage} alt="Homepage" />
-          <HomepageImg src={bPlantisHomepageHowItWorks} alt="How it works" />
+          <HomepageImg src={aPlantis} alt="Homepage" />
+          <HomepageImg src={bPlantis} alt="How it works" />
         </Slider>
       </CarouselShadow>
     </CarouselWrapper>
