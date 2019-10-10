@@ -1,7 +1,11 @@
 .App {
-  background-image: url("https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  min-height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1483982258113-b72862e6cff6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
   color: white;
+  padding-bottom: 8px;
 }
 
 h1 {
@@ -26,7 +30,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #09d3ac;
+  color: white;
 }
 
 .App-logo {

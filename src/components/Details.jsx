@@ -12,6 +12,7 @@ const DetailsStyle = styled.div`
     && h2 {
       margin-bottom: 10px;
     }
+    
     /* border-right: 2px solid #09d3ac; */
 `;
 
