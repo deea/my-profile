@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from './Buttons';
+import ButtonLink from './ButtonLink';
 
 
 const PageWrapper = styled.div`
@@ -24,7 +24,7 @@ const Error = () => (
   <PageWrapper>
     <TextStyle>
       <h1>Ooops: path does not exist!</h1>
-      <Button url="/" text="Back Home" />
+      <ButtonLink url="/" text="Back Home" />
     </TextStyle>
   </PageWrapper>
 );

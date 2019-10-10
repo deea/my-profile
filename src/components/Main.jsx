@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {
   Summary, Details, ProjectDetails, Skills,
 } from './index';
-import Button from './Buttons';
+import ButtonLink from './ButtonLink';
 
 const projects = [
   {
@@ -47,7 +47,7 @@ const Main = () => (
             <strong>Le Wagon Full-stack Ruby on Rails Bootcamp </strong>
             - 9 week intensive coding bootcamp learning and coding with Ruby on Rails, HTML5, CSS/SCSS, Bootstrap, JavaScript ES6, jQuery, SQL, PostgreSQL, MVC, OOP, git, GitHub and Heroku. During the course I completed several projects, listed in the Projects section.
           </p>
-          <Button url="/plantis" text="Plantis screenshots" target="_blank" />
+          <ButtonLink url="/plantis" text="Plantis screenshots" target="_blank" />
         </div>
       </Details>
       <Details header="Projects">

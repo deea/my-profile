@@ -21,7 +21,7 @@ const Buttons = styled.button`
   margin-top: 15px;
 `;
 
-const Button = ({ url, text, target }) => (
+const ButtonLink = ({ url, text, target }) => (
   <ButtonWrapper>
     <Link to={url} target={target}>
       <Buttons type="button">
@@ -31,15 +31,15 @@ const Button = ({ url, text, target }) => (
   </ButtonWrapper>
 );
 
-Button.defaultProps = {
+ButtonLink.defaultProps = {
   target: '',
 };
 
-Button.propTypes = {
+ButtonLink.propTypes = {
   url: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   target: PropTypes.string,
 };
 
 
-export default Button;
+export default ButtonLink;

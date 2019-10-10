@@ -20,7 +20,7 @@ const CarouselShadow = styled.div`
 const CarouselText = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0px 30px;
+  margin: 15px 30px 0px 30px;
 `;
 
 const HomepageImg = styled.img`
