@@ -9,14 +9,15 @@ const ButtonWrapper = styled.div`
 `;
 
 const Buttons = styled.button`
-  background-color: #09d3ac;
   margin: 5px;
+  border: 2px solid #09d3ac;
+  background: none;
   color: white;
   font-size: 18px;
   font-weight: bold;
   width: 200px;
   height: 35px;
-  border-radius: 30px;
+  border-radius: 3px;
   justify-content: center;
   margin-top: 15px;
 `;

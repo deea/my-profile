@@ -32,6 +32,10 @@ const WorkSkills = styled.div`
   justify-content: space-between;
 `;
 
+const ButtonLinkPosition = styled.span`
+  text-align: center;
+`;
+
 const Main = () => (
   <AppMain>
     <Summary
@@ -47,7 +51,9 @@ const Main = () => (
             <strong>Le Wagon Full-stack Ruby on Rails Bootcamp </strong>
             - 9 week intensive coding bootcamp learning and coding with Ruby on Rails, HTML5, CSS/SCSS, Bootstrap, JavaScript ES6, jQuery, SQL, PostgreSQL, MVC, OOP, git, GitHub and Heroku. During the course I completed several projects, listed in the Projects section.
           </p>
-          <ButtonLink url="/plantis" text="Plantis screenshots" target="_blank" />
+          <ButtonLinkPosition>
+            <ButtonLink url="/plantis" text="Plantis screenshots" target="_blank" />
+          </ButtonLinkPosition>
         </div>
       </Details>
       <Details header="Projects">

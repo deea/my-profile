@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   return (
-    <HashRouter>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/plantis" component={PlantisPage} />

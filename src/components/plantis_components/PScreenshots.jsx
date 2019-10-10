@@ -85,7 +85,7 @@ const PScreenshots = () => (
         <YourJungleImgs src={hPlantis} alt="other people's plants" />
       </JungleWrapper>
     </ScreensAndText>
-    <h3><em>Disclaimer: Please note Plantis web application has been developed with the intention to learn and apply the knowledge gained during the bootcamp in a collaborative and real-life like setting. It is not a complete product at this stage.</em></h3>
+    <p>Please note Plantis web application has been developed with the intention to learn and apply the knowledge gained during the bootcamp in a collaborative and real-life like setting. It is not a complete product at this stage however hopefully it will be in the near future.</p>
   </ScreenShotsWrapper>
 );
 

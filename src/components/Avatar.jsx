@@ -15,6 +15,7 @@ const AvatarText = styled.div`
 const Wrapper = styled.div`
   position: relative;
   margin-top: 30px;
+  
 
   &:hover ${AvatarText} {
     visibility: visible;
@@ -25,6 +26,7 @@ const AvatarImg = styled.img`
   width: 130px;
   height: 130px;
   border-radius: 30%;
+  border: 2px solid #09d3ac;
 
   :hover {
     opacity: 0.3;
