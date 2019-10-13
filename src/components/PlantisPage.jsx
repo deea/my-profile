@@ -1,15 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { FaChevronLeft } from 'react-icons/fa';
 import PHeader from './plantis_components/PHeader';
 import PVideo from './plantis_components/PVideo';
 import PScreenshots from './plantis_components/PScreenshots';
-
+import Page from './Page';
 
 const PageWrapper = styled.div`
-  max-width: 100vw;
-  margin: 0px 50px;
-  padding: 10px 40px;
-
   && h3 {
     font-size: 25px;
   }
@@ -19,23 +17,25 @@ const PageWrapper = styled.div`
   }
 `;
 
+const Back = styled.div`
+  font-size: 16zpx;
+  display: flex;
+  align-items: center;
+`;
+
 const PlantisPage = () => (
-  <div style={{
-    background: 'linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url("https://images.pexels.com/photos/1227648/pexels-photo-1227648.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")',
-    backgroundSize: 'cover',
-    backgroundPosition: 'top center',
-    backgroundAttachment: 'fixed',
-    backgroundRepeat: 'no-repeat',
-    color: 'white',
-    paddingBottom: '50px',
-  }}
-  >
+  <Page imageUrl="https://images.pexels.com/photos/1227648/pexels-photo-1227648.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" darker>
+    <Link to="/">
+      <Back>
+        <FaChevronLeft /><span style={{ marginLeft: '8px', fontSize: '24px' }}>Home</span>
+      </Back>
+    </Link>
     <PageWrapper>
       <PHeader />
       <PVideo />
       <PScreenshots />
     </PageWrapper>
-  </div>
+  </Page>
 );
 
 export default PlantisPage;

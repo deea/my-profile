@@ -52,7 +52,7 @@ const Main = () => (
             - 9 week intensive coding bootcamp learning and coding with Ruby on Rails, HTML5, CSS/SCSS, Bootstrap, JavaScript ES6, jQuery, SQL, PostgreSQL, MVC, OOP, git, GitHub and Heroku. During the course I completed several projects, listed in the Projects section.
           </p>
           <ButtonLinkPosition>
-            <ButtonLink url="/plantis" text="Plantis screenshots" target="_blank" />
+            <ButtonLink url="/plantis" text="Plantis Project" />
           </ButtonLinkPosition>
         </div>
       </Details>

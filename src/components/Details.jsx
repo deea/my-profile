@@ -3,10 +3,8 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const DetailsStyle = styled.div`
-    margin: 0px 30px;
     font-size: 24px;
-    flex-grow: 1;
-    flex-basis: 0;
+    width: 30%;
     margin-top: 20px;
 
     && h2 {

@@ -12,7 +12,7 @@ const SkillsSection = styled.div`
 `;
 
 const Skill = styled.div`
-  width: 33%;
+  width: 50%;
   overflow: hidden;
 `;
 

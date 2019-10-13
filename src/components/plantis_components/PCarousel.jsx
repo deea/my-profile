@@ -20,7 +20,7 @@ const CarouselShadow = styled.div`
 const CarouselText = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 15px 30px 0px 30px;
+  margin-right: 30px;
 `;
 
 const HomepageImg = styled.img`
@@ -31,14 +31,11 @@ const HomepageImg = styled.img`
 const CarouselWrapper = styled.div`
   width: 700px;
   height: 450px;
-  margin: 40px 0px;
-  padding: 20px 0px;
 `;
 
 const PCarousel = () => (
   <CarouselAndText>
     <CarouselText>
-      <h3>Landing Page</h3>
       <p>This is the landing page - once you create an account you have the option to visit your jungle or add a new plant to it. The bottom part of the page is a short description of how the app works.</p>
     </CarouselText>
     <CarouselWrapper>
