@@ -20,6 +20,7 @@ const Buttons = styled.button`
   border-radius: 3px;
   justify-content: center;
   margin-top: 15px;
+  cursor:pointer;
 `;
 
 const ButtonLink = ({ url, text, target }) => (

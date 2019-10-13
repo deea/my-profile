@@ -14,7 +14,7 @@ const AvatarText = styled.div`
 
 const Wrapper = styled.div`
   position: relative;
-  margin-top: 30px;
+  margin-top: 5px;
   
 
   &:hover ${AvatarText} {

@@ -6,13 +6,19 @@ const ProjectName = styled.span`
   color:  #09d3ac;
 `;
 
+const ProjectText = styled.a`
+  :hover {
+    text-decoration: underline;
+  }
+`;
+
 const ProjectDetails = ({ url, name, text }) => (
   <p>
     <span>
-      <a href={url} target="_blank" rel="noopener noreferrer">
+      <ProjectText href={url} target="_blank" rel="noopener noreferrer">
         <ProjectName><strong>{`${name}: `}</strong></ProjectName>
         {text}
-      </a>
+      </ProjectText>
     </span>
   </p>
 );
