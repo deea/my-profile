@@ -12,6 +12,7 @@ const CreatedWithReact = styled.div`
 
 const IconSocial = styled.div`
   margin: 16px 8px 0px 8px;
+  color: #09d3ac;
 `;
 
 const SocialMedia = ({ icon, url }) => (

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import meSquare from '../meSquare.jpg';
-import Pdf from '../AndreeaCapalnasResume.pdf';
+import Pdf from '../AndreeaCapalnasResume1.pdf';
 
 const AvatarText = styled.div`
   position: absolute;

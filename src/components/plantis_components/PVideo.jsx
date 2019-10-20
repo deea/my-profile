@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import YouTube from 'react-youtube';
 
 const opts = {
-  height: '390',
-  width: '640',
+  height: '500',
+  width: '900',
   playerVars: {
     autoplay: 0,
   },
@@ -18,25 +18,22 @@ const VideoWrapper = styled.div`
   margin-bottom: 40px;
   border-radius: 4px;
   padding: 20px 0px;
+
 `;
 
-const VideoText = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-left: 30px;
+const GreenBorder = styled(YouTube)`
+  border: solid 3px #09d3ac;
 `;
+
 
 const PVideo = () => (
   <>
-    <h3>See Plantis in action by watching this <strong>demo</strong> video from the nerve-racking presentation night.</h3>
+    <p style={{ textAlign: 'center' }}>See Plantis in action by watching this <strong style={{ color: '#09d3ac' }}>demo</strong> video from the nerve-racking presentation night</p>
     <VideoWrapper>
-      <YouTube
+      <GreenBorder
         videoId="MGvvO2Mk-SQ"
         opts={opts}
       />
-      <VideoText>
-        <p>It was our final night of the bootcamp, where 12 projects that had been preselected to be developed were being demoed. It wasn't an easy task to present in front of alomst 100 people, especially when you want to ensure that you render the potential of the app along wiht the hard work and enthusiams that has gone into it. But we did it and we couldn't have been prouder!</p>
-      </VideoText>
     </VideoWrapper>
   </>
 );
