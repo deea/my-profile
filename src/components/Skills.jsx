@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const skills = ['Ruby', 'Heroku', 'Teamwork', 'Rails', 'PostgreSQL', 'Collaboration', 'JavaScript ES6', 'GitHub', 'Work Ethic', 'CSS/SCSS', 'git', 'Enthusiasm', 'HTML5', 'DNS', 'Project Management'];
+const skills = ['Ruby', 'Rails', 'JavaScript ES6', 'HTML5', 'CSS/SCSS', 'Heroku', 'PostgreSQL', 'GitHub', 'git', 'DNS', 'Teamwork', 'Collaboration', 'Work Ethic', 'Enthusiasm', 'Project Management'];
 
 const SkillsSection = styled.div`
   display: flex;
